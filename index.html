@@ -15,7 +15,7 @@
       hbspt.forms.create({
         portalId: "6302937",
         formId: "6cf03c26-2a70-47c2-a670-b55e6de3e8c8",
-        onBeforeFormInit: function(ctx) {
+        onFormReady: function($form) {
           console.log('Foooo');
           var field = 'trustedform';
           var provideReferrer = false;

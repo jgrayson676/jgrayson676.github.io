@@ -12,11 +12,8 @@
     <script>
       hbspt.forms.create({
         portalId: "6302937",
-        formId: "6cf03c26-2a70-47c2-a670-b55e6de3e8c8"
-      });
-    </script>
-    <script type="text/javascript">
-      (function() {
+        formId: "6cf03c26-2a70-47c2-a670-b55e6de3e8c8",
+        onFormReady: function($form) {
           var field = 'xxTrustedFormCertUrl';
           var provideReferrer = false;
           var invertFieldSensitivity = false;
@@ -24,12 +21,10 @@
           tf.type = 'text/javascript'; tf.async = true;
           tf.src = 'http' + ('https:' == document.location.protocol ? 's' : '') +
             '://api.trustedform.com/trustedform.js?provide_referrer=' + escape(provideReferrer) + '&field=' + escape(field) + '&l='+new Date().getTime()+Math.random() + '&invert_field_sensitivity=' + invertFieldSensitivity;
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s); }
-      )();
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tf, s);
+        }
+      });
     </script>
-    <noscript>
-      <img src="http://api.trustedform.com/ns.gif" />
-    </noscript>
   </head>
   <body>
 
